@@ -1,0 +1,30 @@
+{
+  "name": "reciptor",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "postbuild": "next-on-netlify",
+    "start": "next start",
+    "type-check": "tsc"
+  },
+  "dependencies": {
+    "@types/react-scroll": "^1.8.0",
+    "framer-motion": "^2.4.3-beta.2",
+    "next": "latest",
+    "next-on-netlify": "^2.4.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-scroll": "^1.8.1",
+    "redux": "^4.0.5",
+    "saas": "^1.0.0",
+    "sass": "^1.26.10"
+  },
+  "devDependencies": {
+    "@types/node": "^12.12.21",
+    "@types/react": "^16.9.16",
+    "@types/react-dom": "^16.9.4",
+    "typescript": "3.9.7"
+  },
+  "license": "ISC"
+}

@@ -1,0 +1,164 @@
+@import './var';
+
+html {
+    overflow-x: hidden;
+    body {
+        header {
+            z-index: 999;
+            position: fixed;
+            background: rgba($color: $white, $alpha: 0.9);
+            width: 100%;
+            nav {
+                display: flex;
+                height: 96px;
+                padding: 0 64px;
+                justify-content: space-between;
+                align-items: center;
+                .logo {
+                    cursor: pointer;
+                }
+                .menuSearch {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    > img {
+                        position: absolute;
+                        z-index: 10;
+                        top: 50%;
+                        left: 24px;
+                        transform: translateY(-50%);
+                    }
+                    input {
+                        border: none;
+                        border-radius: 4px;
+                        font: 400 20px $sans;
+                        box-shadow: 0px 16px 24px 0px rgba(0, 0, 0, 0.05);
+                        padding: 12px 24px;
+                        color: $black;
+                        text-indent: 36px;
+                        z-index: 9;
+                    }
+                    .menuSearchButton {
+                        position: relative;
+                        background: $primary;
+                        height: 48px;
+                        width: 52px;
+                        transform: translateX(-4px);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 0;
+                        border-radius: 4px;
+                        img {
+                            transform: translateX(2px);
+                        }
+                    }
+                }
+            }
+        }
+        .landing {
+            height: 100vh;
+            .landingWrapper {
+                padding: 0 128px;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                .landingBg {
+                    z-index: -1;
+                    height: 100%;
+                    width: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    img {
+                        height: inherit;
+                        width: inherit;
+                        object-fit: cover;
+                        object-position: right bottom;
+                        mask-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,0.2));
+                    }
+                }
+                .landingText {
+                    h1 {
+                        color: $primary;
+                        font: 900 72px $serif;
+                        margin-bottom: 24px;
+                    }
+                    p {
+                        font: 400 20px $sans;
+                        margin-bottom: 48px;
+                        color: $black;
+                    }
+                    button {
+                        background: $secondary;
+                        border-radius: 4px;
+                        img {
+                            margin-left: 16px;
+                        }
+                    }
+                }
+            }
+        }
+        footer {
+            background: $primary;
+            .footerWrapper {
+                p {
+                    padding: 32px 0;
+                    text-align: center;
+                    font: 400 20px $sans;
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    html {
+        body {
+            .landing {
+                height: 100vh;
+                .landingWrapper {
+                    padding: 0 32px;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    .landingBg {
+                        z-index: -1;
+                        height: 100%;
+                        width: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        img {
+                            height: inherit;
+                            width: inherit;
+                            object-fit: cover;
+                            object-position: right bottom;
+                            mask-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,0.1));
+                        }
+                    }
+                    .landingText {
+                        h1 {
+                            color: $primary;
+                            font: 900 64px $serif;
+                            margin-bottom: 24px;
+                        }
+                        p {
+                            font: 400 20px $sans;
+                            margin-bottom: 48px;
+                            color: $black;
+                        }
+                        button {
+                            background: $secondary;
+                            border-radius: 4px;
+                            img {
+                                margin-left: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

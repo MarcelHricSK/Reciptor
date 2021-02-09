@@ -1,0 +1,84 @@
+@import "./font";
+
+$primary: #276A39;
+$secondary: #4A3333;
+
+$black: #242424;
+$white: #ffffff;
+
+$sans: "Montserrat";
+$serif: "Butler U";
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+img {
+    vertical-align: middle;
+}
+
+small {
+    font: 400 16px $sans;
+    display: block;
+}
+
+.overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $white;
+    &.hidden {
+        opacity: 0;
+        pointer-events: none;
+        transition: 1s;
+    }
+    img {
+        width: 160px;
+    }
+}
+.paddingB {
+    padding-bottom: 64px;
+}
+
+button {
+    outline: none;
+    border: none;
+    font: 400 20px $sans;
+    color: $white;
+    padding: 12px 24px;
+    cursor: pointer;
+}
+
+section.section {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    .sectionWrapper {
+        height: fit-content;
+        max-width: 1140px;
+        width: 100%;
+        padding: 0 32px;
+        box-sizing: content-box;
+        .sectionTitle {
+            font: 700 48px $serif;
+            color: $primary;
+            margin-bottom: 32px;
+            &.center {
+                text-align: center;
+            }
+            &.resultsTitle {
+                margin-bottom: 0;
+            }
+        }
+        small {
+            margin-bottom: 48px;
+        }
+    }
+}
