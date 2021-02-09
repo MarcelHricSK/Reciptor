@@ -1,5 +1,6 @@
 # Reciptor
 by Marcel Hric
 
-# Poznámky
-- CSS pomenovania class sú outdated, v súčastnosti používam BEM štandard
+## Poznámky
+- Doba práce: 10-12 hodín
+- CSS pomenovania class a štruktúrovanie sú outdated, v súčastnosti používam BEM štandard

@@ -40,7 +40,7 @@ const IndexPage: React.FC<Props> = (props: Props) => {
         <Footer/>
     </>
   );
-};
+}
 
 export const getServerSideProps: GetServerSideProps = async () => {
     const res = await fetch(`https://api.spoonacular.com/recipes/random?number=18&apiKey=c09e461a0fce4ff2bc0a913e765f9e52`);
